@@ -1,0 +1,72 @@
+<svg viewBox="0 0 900 400" xmlns="http://www.w3.org/2000/svg" style="font-family: 'Segoe UI', system-ui, sans-serif; background: #ffffff;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 7" refX="9" refY="3.5" markerWidth="8" markerHeight="6" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+
+  <text x="450" y="35" text-anchor="middle" font-size="20" font-weight="700" fill="#1e293b">Arquitetura — Receita Fácil</text>
+
+  <!-- Frontend Box -->
+  <rect x="30" y="70" width="240" height="160" rx="12" fill="#2563eb"/>
+  <text x="150" y="105" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">Frontend (React)</text>
+  <text x="150" y="130" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.85)">Repositorio proprio</text>
+  <line x1="60" y1="145" x2="240" y2="145" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="150" y="165" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Dashboard com graficos</text>
+  <text x="150" y="182" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Explorar receitas + Filtros</text>
+  <text x="150" y="199" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">CRUD de favoritos</text>
+  <text x="150" y="216" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Dockerfile (Node + Nginx)</text>
+
+  <!-- Arrow Frontend -> Backend -->
+  <line x1="270" y1="135" x2="355" y2="135" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="355" y1="155" x2="270" y2="155" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="285" y="110" width="55" height="22" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="312" y="125" text-anchor="middle" font-size="11" font-weight="500" fill="#475569">REST</text>
+  <text x="312" y="175" text-anchor="middle" font-size="10" fill="#94a3b8">GET POST</text>
+  <text x="312" y="188" text-anchor="middle" font-size="10" fill="#94a3b8">PUT DELETE</text>
+
+  <!-- Backend Box -->
+  <rect x="360" y="70" width="240" height="160" rx="12" fill="#7c3aed"/>
+  <text x="480" y="105" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">API Backend (FastAPI)</text>
+  <text x="480" y="130" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.85)">Repositorio proprio</text>
+  <line x1="390" y1="145" x2="570" y2="145" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="480" y="165" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">CRUD receitas favoritas</text>
+  <text x="480" y="182" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Busca, filtros, paginacao</text>
+  <text x="480" y="199" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Integracao TheMealDB</text>
+  <text x="480" y="216" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Dockerfile (Python + Uvicorn)</text>
+
+  <!-- Arrow Backend -> External -->
+  <line x1="600" y1="135" x2="645" y2="135" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="645" y1="155" x2="600" y2="155" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="607" y="110" width="55" height="22" rx="4" fill="#f1f5f9" stroke="#e2e8f0"/>
+  <text x="634" y="125" text-anchor="middle" font-size="11" font-weight="500" fill="#475569">REST</text>
+
+  <!-- External API Box -->
+  <rect x="650" y="70" width="220" height="160" rx="12" fill="#64748b"/>
+  <text x="760" y="105" text-anchor="middle" font-size="16" font-weight="600" fill="#ffffff">TheMealDB</text>
+  <text x="760" y="130" text-anchor="middle" font-size="12" fill="rgba(255,255,255,0.85)">API Externa (publica)</text>
+  <line x1="680" y1="145" x2="840" y2="145" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+  <text x="760" y="165" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Busca por nome</text>
+  <text x="760" y="182" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Listagem de categorias</text>
+  <text x="760" y="199" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Filtro por categoria</text>
+  <text x="760" y="216" text-anchor="middle" font-size="11" fill="rgba(255,255,255,0.85)">Detalhes da receita</text>
+
+  <!-- Database -->
+  <ellipse cx="480" cy="290" rx="55" ry="18" fill="#d97706"/>
+  <rect x="425" y="282" width="110" height="28" fill="#d97706"/>
+  <ellipse cx="480" cy="310" rx="55" ry="18" fill="#e69500"/>
+  <text x="480" y="305" text-anchor="middle" font-size="13" font-weight="600" fill="#ffffff">SQLite</text>
+  <line x1="480" y1="230" x2="480" y2="272" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Legend -->
+  <rect x="30" y="345" width="840" height="45" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+  <text x="50" y="372" font-size="12" font-weight="600" fill="#475569">Legenda:</text>
+  <rect x="120" y="360" width="16" height="16" rx="3" fill="#2563eb"/>
+  <text x="142" y="373" font-size="11" fill="#475569">Modulo desenvolvido</text>
+  <rect x="280" y="360" width="16" height="16" rx="3" fill="#64748b"/>
+  <text x="302" y="373" font-size="11" fill="#475569">Modulo externo (consumido)</text>
+  <line x1="470" y1="368" x2="510" y2="368" stroke="#64748b" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="520" y="373" font-size="11" fill="#475569">Comunicacao REST obrigatoria</text>
+  <ellipse cx="700" cy="368" rx="12" ry="8" fill="#d97706"/>
+  <text x="718" y="373" font-size="11" fill="#475569">Persistencia de dados</text>
+</svg>
