@@ -1,7 +1,7 @@
 services:
   api:
     build:
-      context: ../recipe-hub-api
+      context: ../receita-facil-api
       dockerfile: Dockerfile
     ports:
       - "8000:8000"
